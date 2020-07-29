@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>Content - JD TableAholic</name>
+	<author>JoomDev (Formerly GraphicAholic)</author>
+	<creationDate>November 2014</creationDate>
+	<copyright>Copyright (C) 2020 Joomdev, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@joomdev.com</authorEmail>
+	<authorUrl>https://www.joomdev.com</authorUrl>
+	<version>1.0.0</version>
+
+	<description>
+		<![CDATA[
+		<div class="alert alert-info" style="font-weight: normal;">
+			<img src="../modules/mod_tableaholic/images/TableAholic_01.JPG" alt="TableAholic - The Module"/>
+			<h3>JD TableAholic - Plugin</h3>
+			<p>JD TableAholic is a responsive table builder module which allows you to create highly mobile friendly tables on your Joomla website without writing any CSS code.</p>
+			<p>JD TableAholic formerly known as TableAholic from Graphicaholic is now moved to JoomDev along with other Extensions. <strong>Check out the <a href="https://www.joomdev.com/graphicaholic" target="_blank">Announcement here.</a></strong></p>
+			<a href="https://www.joomdev.com/forum/jd-tableaholic" target="_blank">Support</a> | <span>Demo</span> | <a href="https://www.joomdev.com/products/extensions/jd-tableaholic" target="_blank">More Details</a>
+		</div>
+	]]>
+	</description>
+
+	<files>
+		<filename plugin="TableAholic">TableAholic.php</filename>
+		<folder>assets</folder>
+		<folder>images</folder>
+		<filename>index.html</filename>
+		<filename>TableAholic.xml</filename>
+	</files>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Content - JD TableAholic">https://joomdev.com/updates/tableaholicplugin.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="general" group="general" label="General Settings">
+				<field name="customCSS" type="textarea" filter="raw" cols="40" rows="20" default="" label="Add custom CSS" description="Add custom CSS" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
